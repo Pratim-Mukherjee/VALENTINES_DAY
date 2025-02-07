@@ -1,7 +1,14 @@
+// Hide the message initially
+document.getElementById("message").style.display = "none";
+document.getElementById("surprise").style.display = "none"; 
+
 document.getElementById("yesBtn").addEventListener("click", function() {
+    // Show the message only after clicking "Yes"
     document.getElementById("message").style.display = "block";
-    document.querySelector(".buttons").style.display = "none";
     document.getElementById("surprise").style.display = "block";
+    
+    // Hide buttons after she says yes
+    document.querySelector(".buttons").style.display = "none";
 
     // Generate floating hearts when "Yes" is clicked
     for (let i = 0; i < 20; i++) {
