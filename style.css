@@ -1,0 +1,88 @@
+/* Basic Styles */
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebee;
+    color: #d81b60;
+    margin: 50px;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Heart Animation */
+.heart-animation {
+    font-size: 4rem;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#yesBtn {
+    background-color: #e91e63;
+    color: white;
+}
+
+#noBtn {
+    background-color: #757575;
+    color: white;
+    position: absolute;
+}
+
+/* Hidden Surprise */
+#message {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    display: none;
+}
+
+#surprise {
+    display: none;
+    margin-top: 20px;
+}
+
+#surprise img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Floating Hearts Background */
+@keyframes floatHearts {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    color: red;
+    opacity: 0.7;
+    animation: floatHearts 5s linear infinite;
+}
