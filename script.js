@@ -1,12 +1,14 @@
-// Hide the message initially
-document.getElementById("message").style.display = "none";
-document.getElementById("surprise").style.display = "none"; 
+// Ensure the content is hidden when the page loads
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("message").style.display = "none";
+    document.getElementById("surprise").style.display = "none";
+});
 
 document.getElementById("yesBtn").addEventListener("click", function() {
-    // Show the message only after clicking "Yes"
+    // Show the message and GIF when "Yes" is clicked
     document.getElementById("message").style.display = "block";
     document.getElementById("surprise").style.display = "block";
-    
+
     // Hide buttons after she says yes
     document.querySelector(".buttons").style.display = "none";
 
