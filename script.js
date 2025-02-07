@@ -13,7 +13,7 @@ document.getElementById("yesBtn").addEventListener("click", function() {
     }
 });
 
-// "No" Button Moves Away
+// "No" Button Moves Away When Clicked
 document.getElementById("noBtn").addEventListener("mouseover", function() {
     let x = Math.random() * (window.innerWidth - 100);
     let y = Math.random() * (window.innerHeight - 50);
@@ -21,7 +21,6 @@ document.getElementById("noBtn").addEventListener("mouseover", function() {
     this.style.top = y + "px";
 });
 
-// If she tries clicking "No", it moves away again 😆
 document.getElementById("noBtn").addEventListener("click", function() {
     let x = Math.random() * (window.innerWidth - 100);
     let y = Math.random() * (window.innerHeight - 50);
@@ -42,3 +41,4 @@ function createHeart() {
 }
 
 setInterval(createHeart, 800);
+
