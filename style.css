@@ -1,11 +1,11 @@
 #message {
     font-size: 1.8rem;
     margin-top: 30px;
-    display: none;  /* Hides message on page load */
+    display: none !important;  /* Force hide message on page load */
 }
 
 #surprise {
-    display: none;  /* Hides the surprise GIF on page load */
+    display: none !important;  /* Force hide GIF on page load */
     margin-top: 20px;
 }
 
