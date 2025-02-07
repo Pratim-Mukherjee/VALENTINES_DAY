@@ -1,3 +1,6 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* Body Styling */
 body {
     display: flex;
@@ -6,25 +9,27 @@ body {
     height: 100vh;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
     overflow: hidden;
 }
 
-/* Centering the content */
+/* Glassmorphism Card */
 .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 15px;
+    backdrop-filter: blur(10px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     position: relative;
     width: 90%;
     max-width: 400px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Title Animation */
 h1 {
     font-size: 2rem;
-    color: #e91e63;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -54,7 +59,7 @@ button {
 }
 
 #yesBtn {
-    background-color: #e91e63;
+    background-color: #ff4e50;
     color: white;
 }
 
@@ -73,7 +78,7 @@ button {
     font-size: 1.8rem;
     margin-top: 20px;
     display: none;
-    color: #e91e63;
+    color: white;
 }
 
 #surprise {
